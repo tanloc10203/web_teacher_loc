@@ -1,6 +1,6 @@
 <?php
 
-$this->getLayout("header");
+$this->getLayout("header", $params);
 
 $this->getLayout("content", $params);
 

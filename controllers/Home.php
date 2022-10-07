@@ -13,6 +13,7 @@ class Home extends Controller
     $this->view("layoutMaster", [
       'name' => 'Thứ 2',
       'page' => 'home',
+      'title' => 'Home',
       'dataStudent' => $model->getAll(),
       'total' => $model->total(),
     ]);
