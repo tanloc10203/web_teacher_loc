@@ -14,8 +14,8 @@ class Home extends Controller
       'name' => 'Thứ 2',
       'page' => 'home',
       'title' => 'Home',
-      'dataStudent' => $model->getAll(),
-      'total' => $model->total(),
+      'dataStudent' => $model::all()->find(1),
+      'total' => $model::all()->count(),
     ]);
   }
 

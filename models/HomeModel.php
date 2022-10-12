@@ -2,25 +2,9 @@
 
 namespace app\models;
 
-use app\core\Database;
+use \Illuminate\Database\Eloquent\Model;
 
-class HomeModel extends Database
+class HomeModel extends Model
 {
-  public function getAll()
-  {
-    try {
-      $stmt = $this->getConn()->prepare("SELECT * FROM sinhvien");
-      $stmt->execute();
-      $stmt->setFetchMode(\PDO::FETCH_ASSOC);
-      return $stmt->fetchAll();
-    } catch (\PDOException $e) {
-      echo "Error: " . $e->getMessage();
-      exit;
-    }
-  }
-
-  public function total()
-  {
-    return 50;
-  }
+  protected $table = "sinhvien";
 }

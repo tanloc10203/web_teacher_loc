@@ -4,4 +4,4 @@ $this->getLayout("header", $params);
 
 $this->getLayout("content", $params);
 
-$this->getLayout("footer");
+$this->getLayout("footer", $params);

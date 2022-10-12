@@ -1,7 +1,9 @@
 <?php
 
-use app\core\Application;
+require "./bootstrap.php";
 
-require_once "./autoload.php";
+session_start();
+
+use app\core\Application;
 
 new Application();
