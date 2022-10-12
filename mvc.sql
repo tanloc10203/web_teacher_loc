@@ -22,4 +22,6 @@ INSERT INTO
 VALUES
   ("ADMIN"),
   ("CLIENT"),
-;
+  ("USER"),
+  ("MEMBER"),
+  ("STAFF");
