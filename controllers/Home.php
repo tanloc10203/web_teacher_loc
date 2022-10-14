@@ -8,14 +8,10 @@ class Home extends Controller
 {
   public function index()
   {
-    $model = $this->model("HomeModel");
-
     $this->view("layoutMaster", [
       'name' => 'Thứ 2',
       'page' => 'home',
       'title' => 'Home',
-      'dataStudent' => $model::all()->find(1),
-      'total' => $model::all()->count(),
     ]);
   }
 
